@@ -40,7 +40,7 @@
         // $(arrow).fadeIn(1000, "swing");
         $(arrow).slideDown(2000);
         // Show the menu
-        $('#mainNav').fadeIn(1000, "swing");
+        $('#mainNav').fadeIn(2000, "swing");
         
         // Initialize tooltips, show on hover
         $(function () {

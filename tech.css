@@ -150,7 +150,7 @@
   transform: scale(1);
 }
 .tech-card.is-inactive .tech-card__inner {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .tech-card.is-inactive:hover .tech-card__inner {
   background-color: #949fb0;
@@ -180,9 +180,4 @@
   .tech-card_drawer {
     width: calc(200% + 30px);
   }
-}
-
-.scale-svg {
-  width: 100%;
-  height: auto;
 }

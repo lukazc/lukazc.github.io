@@ -1,7 +1,8 @@
 ;(function($) {
   "use strict"; // Start use strict
   
-  $(document).ready(function(){
+  // It's in a timeout because Edge
+  $(document).ready(setTimeout(function(){
     // Adjust position of the fixed button in case of width > 1950
     adjustFixedButtonPosition();
 
@@ -18,7 +19,7 @@
       // Show the above-fold scroll-down arrow
       $('.scroll-arrow').show();
     }
-  });
+  }, 150));
 
 
 
