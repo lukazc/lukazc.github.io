@@ -351,10 +351,6 @@ h6 {
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
-.diamond-skill-icon {
-  line-height: 7.9rem;
-}
-
 /* Footer */
 
 footer.footer {
@@ -438,4 +434,14 @@ a:hover, a:focus, a:active {
 .text-tertiary {
   color: #bb8f00 !important;
   margin-bottom: 1rem !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
