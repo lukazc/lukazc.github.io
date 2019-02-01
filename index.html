@@ -5,21 +5,12 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Web Developer portfolio featuring latest works, as well as personal and contact information.">
-  <meta name="author" content="Luka Žarković Černeli">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Java, Angular, Android, JS, Web, Developer, Bootstrap, jQuery">
+  <meta name="description" content="">
+  <meta name="author" content="">
   
+  <link rel="icon" href="/favicon.ico?v=2" type="image/x-icon">
+
   <title>Luka Žarković Černeli</title>
-  
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122979127-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    
-    gtag('config', 'UA-122979127-1');
-  </script>
   
   <!-- Bootstrap CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
@@ -31,6 +22,8 @@
   
   <!-- Custom CSS -->
   <link href="styles.css" rel="stylesheet">
+  <link href="contact-card.css" rel="stylesheet">
+  <link href="tech.css" rel="stylesheet">
   
 </head>
 
@@ -94,6 +87,7 @@
                 </li>
                 <li class="list-inline-item">              
                   <a id="mail" class="social-link rounded-circle text-white" data-toggle="tooltip" data-placement="top" title="Mail" href="mailto:luka.zarkovic.cerneli@gmail.com">
+                    <!-- <i class="fa fa-envelope"></i> -->
                     <i class="icon-bubble"></i>
                   </a>
                 </li>
@@ -153,16 +147,16 @@
                 <span>jQuery</span>
               </div>
               <div>
+                <img src="assets/svg/angular-icon.svg">
+                <span>Angular</span>
+              </div>
+              <div>
                 <img src="assets/svg/nodejs.svg">
                 <span>Node.js</span>
               </div>
               <div>
                 <img src="assets/svg/typescript.svg">
                 <span>TypeScript</span>
-              </div>
-              <div>
-                <img src="assets/svg/angular-icon.svg">
-                <span>Angular</span>
               </div>
             </div>
           </div>
@@ -184,12 +178,12 @@
                 <span>Sass</span>
               </div>
               <div>
-                <img src="assets/svg/bootstrap.svg">
-                <span>Bootstrap</span>
+                <img src="assets/svg/angular-material.svg">
+                <span>Angular Material</span>
               </div>
               <div>
-                <img src="assets/svg/bulma.svg">
-                <span>Bulma</span>
+                <img src="assets/svg/bootstrap.svg">
+                <span>Bootstrap</span>
               </div>
             </div>
           </div>
@@ -229,7 +223,29 @@
         <h2 class="mb-5">Recent Projects</h2>
       </div>
       <div class="row no-gutters">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
+          <a class="portfolio-item" href="https://lukazc.github.io/Bookey/">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Web Shop</h2>
+                <p class="mb-0">Web store front-end built in Angular!</p>
+              </span>
+            </span>
+            <img class="img-fluid png" src="assets/project-images/Bookey-logo.png">
+          </a>
+        </div>
+        <div class="col-lg-12">
+          <a class="portfolio-item" href="https://github.com/lukazc/lukazc.github.io">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Online portfolio</h2>
+                <p class="mb-0">My personal website is made with Bootstrap and jQuery!</p>
+              </span>
+            </span>
+            <img class="img-fluid png" src="assets/project-images/portfolio-website.png">
+          </a>
+        </div>
+        <div class="col-lg-12">
           <a class="portfolio-item" href="https://github.com/lukazc/Shess">
             <span class="caption">
               <span class="caption-content">
@@ -237,29 +253,7 @@
                 <p class="mb-0">A 2-player chess game written in Java!</p>
               </span>
             </span>
-            <img class="img-fluid" src="assets/project-images/chess-king.svg">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/lukazc/WebShop">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Web Shop</h2>
-                <p class="mb-0">Web store front-end built in Angular!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="assets/project-images/webshop.svg">
-          </a>
-        </div>
-        <div class="col-lg-12">
-          <a class="portfolio-item" href="https://github.com/lukazc/lukazc.github.io">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Online resume</h2>
-                <p class="mb-0">My personal website is made with Bootstrap and jQuery!</p>
-              </span>
-            </span>
-            <img class="img-fluid png" src="assets/project-images/portfolio-website.png">
+            <img class="img-fluid png" src="assets/project-images/chess.jpg">
           </a>
         </div>
         
@@ -342,7 +336,7 @@
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
   
   <!-- Bootstrap JavaScript -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   
   <!-- Custom JavaScript -->
   <script src="main.js"></script>
