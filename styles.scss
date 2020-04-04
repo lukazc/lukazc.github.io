@@ -1,21 +1,25 @@
+$primary-color: #444444;
+$secondary-color: #999999;
+$tertiary-color: #aaaaaa;
+
 body,
 html {
   width: 100%;
   height: 100%;
 }
-
-html {
+html{
   background-color: #26251D;
 }
 
 body {
-  font-family: "Source Sans Pro";
+  font-family: 'Source Sans Pro';
   /* Disable scrolling at first */
   /* overflow: hidden; */
   max-width: 1950px;
   margin: 0 auto !important;
   float: none !important;
 }
+
 
 h1,
 h2,
@@ -38,11 +42,12 @@ h6 {
   color: rgba(255, 255, 255, 0.9);
   background: rgba(52, 58, 64, 0.5);
   line-height: 45px;
-}
-.scroll-to-top img {
-  height: 20px;
-  width: 20px;
-  color: white;
+
+  img {
+      height: 20px;
+      width: 20px;
+      color: white;
+  }
 }
 
 .scroll-to-top:focus, .scroll-to-top:hover {
@@ -54,42 +59,64 @@ h6 {
 }
 
 /* Above fold */
+
 .above-fold {
   position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   width: 100%;
+
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  
+  .main {
+      .primary-info {
+          width: 100%;
+          margin-left: 44px + 15px;
+      }
+  }
+
+  .contact-info .row {
+      height: 44px;
+      margin: 0;
+  
+      display: flex;
+      flex-direction: row;
+  
+      &:hover {
+  
+          .text {
+              text-decoration: underline;
+          }
+  
+      }
+  
+      .text {
+          flex-grow: 1;
+          height: 100%;
+  
+          border-bottom: 1px solid $tertiary-color;
+          border-left: 1px solid $tertiary-color;
+  
+          padding: 0 5px 0 15px;
+          line-height: 44px;
+      }
+  
+      .icon img {
+          height: 20px;
+          width: 20px;
+          margin: 12px;
+      }
+  }
 }
-.above-fold .main .primary-info {
-  width: 100%;
-  margin-left: 59px;
-}
-.above-fold .contact-info .row {
-  height: 44px;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-}
-.above-fold .contact-info .row:hover .text {
-  text-decoration: underline;
-}
-.above-fold .contact-info .row .text {
-  flex-grow: 1;
-  height: 100%;
-  border-bottom: 1px solid #aaaaaa;
-  border-left: 1px solid #aaaaaa;
-  padding: 0 5px 0 15px;
-  line-height: 44px;
-}
-.above-fold .contact-info .row .icon img {
-  height: 20px;
-  width: 20px;
-  margin: 12px;
+
+
+@media (min-width: 512px){
 }
 
 @media (min-width: 992px) {
@@ -97,13 +124,15 @@ h6 {
     height: 100vh;
   }
 }
+
 /* Navigation */
 #mainNav {
   display: none;
   position: absolute;
   border-bottom: 1px solid transparent;
-  background-color: rgba(32, 48, 135, 0.9);
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//   background-color: rgba(38, 37, 29, 0.9);
+  background-color: rgb(32, 48, 135, 0.9);
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #mainNav .navbar-brand {
@@ -117,10 +146,11 @@ h6 {
   padding: 13px;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.9);
-}
-#mainNav .navbar-toggler img {
-  height: 20px;
-  width: 20px;
+
+  img {
+      height: 20px;
+      width: 20px;
+  }
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -142,25 +172,22 @@ h6 {
   #mainNav {
     border-bottom: 1px solid transparent;
   }
-
   #mainNav .navbar-brand {
     padding: 10px 20px;
     color: #fff;
   }
-
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: rgba(255, 255, 255, 0.8);
   }
-
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
     color: #fff;
   }
-
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
     color: rgba(255, 255, 255, 0.8);
   }
 }
+
 @media only screen and (min-width: 992px) {
   #mainNav {
     -webkit-transition: background-color 0.2s;
@@ -170,7 +197,6 @@ h6 {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
   }
-
   #mainNav.is-fixed {
     /* when the user scrolls down, we hide the header right above the viewport */
     position: fixed;
@@ -182,30 +208,27 @@ h6 {
     border-bottom: 1px solid #26251D;
     background-color: rgba(38, 37, 29, 0.9);
   }
-
   #mainNav.is-fixed .navbar-brand {
     color: rgba(255, 255, 255, 0.9);
   }
-
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
   }
-
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
     color: rgba(255, 255, 255, 0.9);
   }
-
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
     color: #0085A1;
   }
-
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
 }
+
 /* Footer */
+
 footer.footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#023342), to(black));
   background: linear-gradient(180deg, #023342 0%, black 100%);
@@ -214,6 +237,7 @@ footer.footer {
 }
 
 /* General styling */
+
 a {
   color: #1D809F;
 }
@@ -227,24 +251,22 @@ a:hover, a:focus, a:active {
 }
 
 .text-primary {
-  color: #444444 !important;
+  color: $primary-color !important;
 }
 
 .text-secondary {
-  color: #999999 !important;
+    color: $secondary-color !important;
 }
 
 .text-tertiary {
-  color: #aaaaaa !important;
+    color: $tertiary-color !important;
 }
 
 .uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 /* Remove dotted outline in Firefox */
 a:focus {
   outline: none;
 }
-
-/*# sourceMappingURL=styles.css.map */
