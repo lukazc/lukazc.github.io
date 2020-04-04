@@ -48,7 +48,8 @@ h6 {
         //   width: 100%;
         //   width: fit-content;
         //   margin-left: 44px;
-          margin-left: 44px + 15px;
+        //   margin-left: 44px + 15px;
+        text-align: center;
 
           .name {
               font-weight: 800;
@@ -56,8 +57,10 @@ h6 {
           }
 
           .title {
-
+              font-size: 20px;
           }
+
+          margin-bottom: 120px;
       }
   }
 

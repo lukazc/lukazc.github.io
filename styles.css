@@ -36,11 +36,15 @@ h6 {
   width: 100%;
 }
 .above-fold .main .primary-info {
-  margin-left: 59px;
+  text-align: center;
+  margin-bottom: 120px;
 }
 .above-fold .main .primary-info .name {
   font-weight: 800;
   font-size: 32px;
+}
+.above-fold .main .primary-info .title {
+  font-size: 20px;
 }
 .above-fold .contact-info .row {
   height: 44px;
