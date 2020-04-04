@@ -6,13 +6,14 @@ body,
 html {
   width: 100%;
   height: 100%;
+
+  font-family: 'Open Sans', sans-serif;
 }
 html{
   background-color: #26251D;
 }
 
 body {
-  font-family: 'Source Sans Pro';
   /* Disable scrolling at first */
   /* overflow: hidden; */
   max-width: 1950px;
@@ -41,15 +42,22 @@ h6 {
   align-items: center;
 
   width: 100%;
-
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   
   .main {
       .primary-info {
-          width: 100%;
+        //   width: 100%;
+        //   width: fit-content;
+        //   margin-left: 44px;
           margin-left: 44px + 15px;
+
+          .name {
+              font-weight: 800;
+              font-size: 32px;
+          }
+
+          .title {
+
+          }
       }
   }
 
