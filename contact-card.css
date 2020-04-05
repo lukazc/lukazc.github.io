@@ -1,7 +1,6 @@
 .contact-card {
   color: #d4cd96;
-  font-family: 'Fira Sans', sans-serif;
-  height: 100%;
+  font-family: 'Open Sans', sans-serif;  height: 100%;
   left: 0;
   position: absolute;
   top: 0;
@@ -96,9 +95,10 @@
   width: 100%;
 }
 .contact-card-front .layer h1 {
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 21px;
+  font-weight: 600;
   letter-spacing: -1px;
+  /* text-transform: uppercase; */
   margin: 0 auto;
   padding: 6px 18px 4px;
   text-align: center;
