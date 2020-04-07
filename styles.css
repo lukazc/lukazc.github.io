@@ -49,33 +49,6 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-
-.scroll-to-top {
-  z-index: 1000;
-  position: fixed;
-  right: 15px;
-  bottom: 15px;
-  display: none;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.9);
-  background: rgba(52, 58, 64, 0.5);
-  line-height: 45px;
-}
-
-.scroll-to-top:focus, .scroll-to-top:hover {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.scroll-to-top:hover {
-  background: #343a40;
-}
-
-.scroll-to-top i {
-  font-weight: 800;
-}
-
 /* Above fold */
 
 .above-fold {
@@ -86,14 +59,20 @@ h6 {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#023342));
-  background: linear-gradient(180deg, #000000 0%, #023342 100%);
-  /* , url("../img/bg-above-fold.jpg") */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   
   color: #FCFFF5;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("./assets/desk.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .above-fold h1 {
