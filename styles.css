@@ -12,6 +12,7 @@ body {
   overflow: hidden;
   /* Fix flickering elements during arrow transitions */
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   /* max-width: 1950px; */
   margin: 0 auto !important;
   float: none !important;

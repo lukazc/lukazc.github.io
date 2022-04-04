@@ -18,6 +18,9 @@
   -o-transform:  translateX(-100%) rotateY(-180deg); /* old opera */
   -ms-transform:  translateX(-100%) rotateY(-180deg); /* old IE */
 }
+.contact-card.flipped .contact-card-front {
+  pointer-events: none;
+}
 .contact-card-front, .contact-card-back {
   backface-visibility: hidden;
   background: repeating-linear-gradient(135deg, #046380, transparent 1px, #002F2F 2px);
